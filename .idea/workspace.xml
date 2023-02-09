@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d59861e-6f44-4d1a-8275-5f37d7df5a6f" name="Changes" comment="Initial commit - Champ">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testCases/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testCases/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testCases/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +68,18 @@
       <option name="presentableId" value="Default" />
       <updated>1673723573347</updated>
       <workItem from="1673723574834" duration="21157000" />
-      <workItem from="1673758029625" duration="5114000" />
+      <workItem from="1673758029625" duration="6006000" />
+      <workItem from="1674659892448" duration="6771000" />
+      <workItem from="1675912423726" duration="853000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit - Champ">
+      <created>1673763233544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673763233544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

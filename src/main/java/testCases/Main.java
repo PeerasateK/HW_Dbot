@@ -19,9 +19,9 @@ public class Main {
 
         //  test Param
         String email1, email2, subject, body;
-        email1  = "testDbot1";                  //Username same as pwd
-        email2  = "testDbot2";
-        subject = "Congra tulations";
+        email1  = "testSelenium1";                  //Username same as pwd
+        email2  = "testSelenium2";
+        subject = "Congratulations";
         body    = "Almost! You can do it.";
 
         //  Create Object Pages
@@ -36,12 +36,13 @@ public class Main {
         signIn(login, email1);
 
         //  Send the Email
+        Thread.sleep(12000);
         dashboard.clickNewMessage();
         dashboard.enterEmailAddress(email2+"@proton.me");
         dashboard.enterSubject(subject);
         dashboard.enterBodyEmail(body);
         dashboard.clickSendEmail();
-        Thread.sleep(25000);    //Email can be delay some time so I put it to sleep for 25 sec
+        Thread.sleep(40000);    //Email can be delay some time, so I put it to sleep for 25 sec
 
         //  Sign out
         dashboard.logout();

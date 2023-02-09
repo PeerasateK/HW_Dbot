@@ -1,18 +1,23 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
 public class DashBoard {
 
     WebDriver driver;
+    Actions action;
 
     public DashBoard(WebDriver driver) {
         this.driver = driver;
+        this.action = new Actions(driver);
     }
+
 
     //  Locator
     By newMessageBtn = By.xpath("//button[normalize-space()='New message']");
@@ -31,7 +36,8 @@ public class DashBoard {
     By confirmDelBtn = By.cssSelector(".button.w100.button-solid-danger");
 
     public void clickNewMessage() {
-        driver.findElement(newMessageBtn).click();
+//        driver.findElement(newMessageBtn).click();
+        action.sendKeys("n").perform();
     }
 
     public void enterEmailAddress(String email) {
@@ -51,7 +57,8 @@ public class DashBoard {
     }
 
     public void clickSendEmail() {
-        driver.findElement(sendBtn).click();
+//        driver.findElement(sendBtn).click();
+        action.keyDown(Keys.CONTROL).sendKeys(Keys.ENTER).keyUp(Keys.CONTROL).perform();
     }
 
     public void logout() {
@@ -69,11 +76,14 @@ public class DashBoard {
     public void clean() throws InterruptedException {
         driver.findElement(selectAllBtn).click();
         driver.findElement(delBtn).click();
+//        action.sendKeys("t").perform();
         driver.findElement(moreBtn).click();
         driver.findElement(trashBtn).click();
-        Thread.sleep(500);
+        Thread.sleep(1000);
         driver.findElement(selectAllBtn).click();
         driver.findElement(delPermanentlyBtn).click();
+//        Thread.sleep(1000);
+//        action.keyDown(Keys.CONTROL).sendKeys(Keys.ENTER).keyUp(Keys.BACK_SPACE).perform();
         driver.findElement(confirmDelBtn).click();
     }
 }
